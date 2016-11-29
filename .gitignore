@@ -1,0 +1,16 @@
+node_modules
+temp
+.tmp
+dist
+.sass-cache
+app/bower_components
+test/bower_components
+package
+app/scripts
+logs
+*.log
+pids
+*.pid
+*.seed
+npm-debug.log
+.DS_Store

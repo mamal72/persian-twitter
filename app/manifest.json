@@ -1,0 +1,48 @@
+{
+  "name": "__MSG_appName__",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/persian-twitter-16.png",
+    "128": "images/persian-twitter-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://tweetdeck.twitter.com/"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "css": [
+        "styles/page.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "page_action": {
+    "default_icon": {
+      "19": "images/persian-twitter-19.png",
+      "38": "images/persian-twitter-38.png"
+    },
+    "default_title": "Persian Twitter",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    "fonts/*.woff"
+  ]
+}

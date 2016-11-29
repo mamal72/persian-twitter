@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Persian Twitter",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Improve Twitter & TweetDeck user exprience for Persian users",
+    "description": "The description of the application"
+  }
+}

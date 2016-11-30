@@ -2,7 +2,7 @@
 
 # persian-twitter
 
-Improve Twitter and TweetDeck user exprience for Persian users (a Chrome extension)
+Improve Twitter and TweetDeck user experience for Persian users (a Chrome extension)
 
 
 ## Installation

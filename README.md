@@ -30,7 +30,12 @@ Remember to write a few tests for your code before sending pull requests.
 
 ## Credits
 
-Special thanks to [Saber Rastikerdar](https://github.com/rastikerdar) and [Saleh Souzanchi](https://github.com/zoghal) for creating awesome Persian fonts!
+Special thanks to following people and projects who made this project possible by designing the fonts. Please check the links below and support their work if you can.
+
+- [Saber Rastikerdar](https://github.com/rastikerdar)
+- [Saleh Souzanchi](https://github.com/zoghal)
+- [PFont](https://github.com/pfont/pfont)
+
 
 ## License
 > MIT

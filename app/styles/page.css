@@ -93,6 +93,35 @@
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/GanjNameh.woff') format('woff');
 }
 
+@font-face {
+  font-family: Pfont;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Regular.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Pfont;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: NotoNaskh;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Regular.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: NotoNaskh;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: IranianSans;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/IranianSans.woff') format('woff');
+}
+
 body.persian-twitter-vazir {
   font-family: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
@@ -151,6 +180,22 @@ body.persian-twitter-shahab .TweetTextSize {
 
 body.persian-twitter-ganjnameh {
   font-family: GanjNameh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body.persian-twitter-pfont {
+  font-family: Pfont, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body.persian-twitter-notonaskh {
+  font-family: NotoNaskh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body.persian-twitter-notonaskh .TweetTextSize {
+  font-size: 15px;
+}
+
+body.persian-twitter-iraniansans {
+  font-family: IranianSans, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {

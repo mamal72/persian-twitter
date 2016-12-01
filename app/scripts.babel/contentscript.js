@@ -1,7 +1,12 @@
 'use strict';
 
+// WebExtensions compatibilty
+// See here: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Chrome_incompatibilities
+if (!chrome) {
+  chrome = browser;
+}
+
 chrome.runtime.onMessage.addListener((request, sender) => {
-    console.log('request', request);
     if (sender.tab) {
         return;
     }

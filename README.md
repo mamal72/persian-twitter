@@ -1,23 +1,34 @@
+[![Chrome Extension](https://img.shields.io/badge/Chrome%20Extension-Ready-green.svg)](https://chrome.google.com/webstore/detail/persian-twitter/jcpoagapgofdckllllifikmflhamhokd)
+[![Firefox Addon](https://img.shields.io/badge/Firefox%20Add--on-Ready-orange.svg)](https://addons.mozilla.org/en-US/firefox/addon/persian-twitter)
 [![license](https://img.shields.io/github/license/mamal72/persian-twitter.svg)](https://github.com/mamal72/persian-twitter/blob/master/LICENSE)
 
 # persian-twitter
 
-Improve Twitter and TweetDeck user experience for Persian users (a Chrome extension)
+This is a [WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions) that improves user experience of Twitter and TweetDeck for Persian users.
+
+The extension is a standard WebExtension and is compatible with both Chrome and Firefox.
 
 
 ## Installation
 
-I can't publish this extension to Chrome Web Store at this moment. They need credit card submission for publishing extensions. I may be able to publish it there soon or may not!
+If you are using Chrome, you can get it from [Chrome Web Store](https://chrome.google.com/webstore/detail/persian-twitter/jcpoagapgofdckllllifikmflhamhokd).
 
-For now, you can grab the CRX file from releases page and install it manually.
+If you are using Firefox, you can get it from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/persian-twitter).
 
 
 ## Screenshots
 
-<img alt="en" title="en" src="https://cdn.rawgit.com/mamal72/persian-twitter/master/screenshot.png" width="300px">
+### Chrome
+
+<img alt="Chrome" title="Chrome" src="https://cdn.rawgit.com/mamal72/persian-twitter/master/screenshot-chrome.png" width="300px">
+
+### Firefox
+
+<img alt="Firefox" title="Firefox" src="https://cdn.rawgit.com/mamal72/persian-twitter/master/screenshot-firefox.png" width="300px">
 
 
 ## Ideas || Issues
+
 Just fill an issue and describe it. I'll check it ASAP!
 
 
@@ -35,7 +46,9 @@ Special thanks to following people and projects who made this project possible b
 - [Saber Rastikerdar](https://github.com/rastikerdar)
 - [Saleh Souzanchi](https://github.com/zoghal)
 - [PFont](https://github.com/pfont/pfont)
+- [Google Noto Fonts](https://www.google.com/get/noto)
 
 
 ## License
+
 > MIT

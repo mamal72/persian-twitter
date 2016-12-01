@@ -1,125 +1,147 @@
 @font-face {
   font-family: Vazir;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Vazir.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Vazir-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Samim;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Samim.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Samim.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Samim.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Samim;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Samim-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Samim-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Samim-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Shabnam;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Shabnam.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Shabnam.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Shabnam.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Shabnam;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Shabnam-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Shabnam-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Shabnam-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Sahel;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Sahel.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Sahel.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Sahel.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Sahel;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Sahel-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Sahel-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Sahel-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Parastoo;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Parastoo.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Parastoo.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Parastoo.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Parastoo;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Parastoo-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Parastoo-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Parastoo-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Gandom;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Gandom.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Gandom.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Gandom.woff') format('woff');
 }
 
 @font-face {
   font-family: Tanha;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Tanha.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Tanha.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Tanha.woff') format('woff');
 }
 
 @font-face {
   font-family: Behdad;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Behdad.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Behdad.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Behdad.woff') format('woff');
 }
 
 @font-face {
   font-family: Farbod;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Farbod.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Farbod.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Farbod.woff') format('woff');
 }
 
 @font-face {
   font-family: Nika;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Nika.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Nika.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Nika.woff') format('woff');
 }
 
 @font-face {
   font-family: Shahab;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Shahab.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Shahab.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Shahab.woff') format('woff');
 }
 
 @font-face {
   font-family: GanjNameh;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GanjNameh.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GanjNameh.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/GanjNameh.woff') format('woff');
 }
 
 @font-face {
   font-family: Pfont;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Regular.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Regular.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Pfont-Regular.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Pfont;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/Pfont-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: NotoNaskh;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Regular.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Regular.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Regular.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: NotoNaskh;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Bold.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Bold.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Bold.woff') format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: IranianSans;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/IranianSans.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/IranianSans.woff') format('woff'),
+       url('moz-extension://__MSG_@@extension_id__/fonts/IranianSans.woff') format('woff');
 }
 
 body.persian-twitter-vazir {

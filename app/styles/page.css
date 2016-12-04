@@ -87,12 +87,6 @@
 }
 
 @font-face {
-  font-family: Farbod;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Farbod.woff') format('woff'),
-       url('moz-extension://__MSG_@@extension_id__/fonts/Farbod.woff') format('woff');
-}
-
-@font-face {
   font-family: Nika;
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Nika.woff') format('woff'),
        url('moz-extension://__MSG_@@extension_id__/fonts/Nika.woff') format('woff');
@@ -176,28 +170,12 @@ body.persian-twitter-behdad {
   font-family: Behdad, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-farbod {
-  font-family: Farbod, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-
-body.persian-twitter-farbod .TweetTextSize {
-  font-size: 17px;
-}
-
 body.persian-twitter-nika {
   font-family: Nika, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-nika .TweetTextSize {
-  font-size: 15px;
-}
-
 body.persian-twitter-shahab {
   font-family: Shahab, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-
-body.persian-twitter-shahab .TweetTextSize {
-  font-size: 15px;
 }
 
 body.persian-twitter-ganjnameh {
@@ -210,10 +188,6 @@ body.persian-twitter-pfont {
 
 body.persian-twitter-notonaskh {
   font-family: NotoNaskh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-
-body.persian-twitter-notonaskh .TweetTextSize {
-  font-size: 15px;
 }
 
 body.persian-twitter-iraniansans {

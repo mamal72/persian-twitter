@@ -6,19 +6,24 @@ if (!chrome) {
   chrome = browser;
 }
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  if (tab.url && (tab.url.startsWith('https://twitter.com') || tab.url === 'https://tweetdeck.twitter.com/')) {
+const manifestData = chrome.runtime.getManifest();
+const urlPatterns = manifestData.content_scripts[0].matches;
+
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, currentTab) => {
+  if (currentTab.url && (currentTab.url.startsWith('https://twitter.com') || currentTab.url === 'https://tweetdeck.twitter.com/')) {
     chrome.pageAction.show(tabId);    
   }
   if (!changeInfo || changeInfo.status !== 'complete') {
     return;
   }
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    if (!tabs || !tabs.length) {
+  chrome.tabs.query({url: urlPatterns}, function(tabs) {
+    if (!tabs.length) {
       return;
     }
-    chrome.tabs.sendMessage(tabs[0].id, {changeFont: {
-      font: localStorage.getItem('persian-twitter-font') || 'default'
-    }});
+    for (const tab of tabs) {
+      chrome.tabs.sendMessage(tab.id, {changeFont: {
+        font: localStorage.getItem('persian-twitter-font') || 'default'
+      }});
+    }
   });
 });

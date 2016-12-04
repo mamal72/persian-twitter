@@ -1,6 +1,6 @@
 @font-face {
   font-family: Vazir;
-  src: url('../fonts/Vazir.woff') format('woff');
+  src: url('../fonts/Vazir-FD.woff') format('woff');
   font-weight: normal;
 }
 
@@ -95,4 +95,10 @@ li:hover {
 a {
   text-decoration: none;
   color: #888;
+}
+
+footer p {
+  font-size: 0.7rem;
+  margin: 6px 0 0;
+  color: #AAA;
 }

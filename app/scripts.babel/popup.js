@@ -1,5 +1,17 @@
 'use strict';
 
+// WebExtensions compatibilty
+// See here: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Chrome_incompatibilities
+if (!chrome) {
+  chrome = browser;
+}
+
+const manifestData = chrome.runtime.getManifest();
+const urlPatterns = manifestData.content_scripts[0].matches;
+const version = manifestData.version;
+
+document.querySelector('#version').innerHTML = version;
+
 const selectFontElement = document.querySelector('#persian-twitter-font');
 const currentFont = localStorage.getItem('persian-twitter-font') || 'default';
 selectFontElement.value = currentFont;
@@ -18,9 +30,11 @@ for (const link of links) {
 selectFontElement.addEventListener('change', () => {
   const font = selectFontElement.value;
   localStorage.setItem('persian-twitter-font', font);
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, {changeFont: {
-      font
-    }});
+  chrome.tabs.query({url: urlPatterns}, function(tabs) {
+    for (const tab of tabs) {
+      chrome.tabs.sendMessage(tab.id, {changeFont: {
+        font
+      }});
+    }
   });
 });

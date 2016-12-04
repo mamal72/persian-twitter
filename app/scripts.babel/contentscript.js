@@ -15,11 +15,15 @@ chrome.runtime.onMessage.addListener((request, sender) => {
     }
     
     const bodyElement = document.querySelector('body');
+    const fontName = request.changeFont.font;
+    const newClassName = `persian-twitter-${fontName}`;
+    if (bodyElement.classList.contains(newClassName)) {
+        return;
+    }
     for (const className of bodyElement.classList) {
         if (className.startsWith('persian-twitter')) {
             bodyElement.classList.remove(className);
         }
     }
-    const fontName = request.changeFont.font;    
-    bodyElement.classList.add(`persian-twitter-${fontName}`);
+    bodyElement.classList.add(newClassName);
 });

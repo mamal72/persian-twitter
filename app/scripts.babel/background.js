@@ -22,7 +22,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, currentTab) => {
     }
     for (const tab of tabs) {
       chrome.tabs.sendMessage(tab.id, {changeFont: {
-        font: localStorage.getItem('persian-twitter-font') || 'default'
+        font: localStorage.getItem('persian-twitter-font') || 'default',
+        fixedFontSize: localStorage.getItem('persian-twitter-fixed-font-size') || 0
       }});
     }
   });

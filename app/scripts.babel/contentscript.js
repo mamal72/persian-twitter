@@ -15,13 +15,20 @@ chrome.runtime.onMessage.addListener((request, sender) => {
     }
     
     const bodyElement = document.querySelector('body');
+    const fixedFontSizeStatus = request.changeFont.fixedFontSize;
     const fontName = request.changeFont.font;
+    if (fixedFontSizeStatus && !bodyElement.classList.contains('persian-twitter-fixed-font-size')) {
+      bodyElement.classList.add('persian-twitter-fixed-font-size');
+    }
+    if (!fixedFontSizeStatus && bodyElement.classList.contains('persian-twitter-fixed-font-size')) {
+      bodyElement.classList.remove('persian-twitter-fixed-font-size');
+    }
     const newClassName = `persian-twitter-${fontName}`;
     if (bodyElement.classList.contains(newClassName)) {
         return;
     }
     for (const className of bodyElement.classList) {
-        if (className.startsWith('persian-twitter')) {
+        if (className.startsWith('persian-twitter') && className !== 'persian-twitter-fixed-font-size') {
             bodyElement.classList.remove(className);
         }
     }

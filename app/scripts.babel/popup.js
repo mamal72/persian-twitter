@@ -16,6 +16,10 @@ const selectFontElement = document.querySelector('#persian-twitter-font');
 const currentFont = localStorage.getItem('persian-twitter-font') || 'default';
 selectFontElement.value = currentFont;
 
+const fixedFontSizeCheckbox = document.querySelector('#persian-twitter-fixed-font-size');
+const currentFixedFontSize = parseInt(localStorage.getItem('persian-twitter-fixed-font-size'), 10) || 0;
+fixedFontSizeCheckbox.checked = currentFixedFontSize;
+
 const links = document.querySelectorAll('a');
 for (const link of links) {
   link.addEventListener('click', e => {
@@ -27,14 +31,21 @@ for (const link of links) {
   });
 }
 
-selectFontElement.addEventListener('change', () => {
+selectFontElement.addEventListener('change', handleChanges);
+fixedFontSizeCheckbox.addEventListener('change', handleChanges);
+
+function handleChanges() {
   const font = selectFontElement.value;
   localStorage.setItem('persian-twitter-font', font);
+  const fixedFontSize = fixedFontSizeCheckbox.checked ? 1 : 0;
+  localStorage.setItem('persian-twitter-fixed-font-size', fixedFontSize);
+
   chrome.tabs.query({url: urlPatterns}, function(tabs) {
     for (const tab of tabs) {
       chrome.tabs.sendMessage(tab.id, {changeFont: {
-        font
+        font,
+        fixedFontSize        
       }});
     }
   });
-});
+}

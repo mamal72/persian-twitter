@@ -49,7 +49,7 @@ body {
   font-family: Vazir;
   font-size: 1rem;
   line-height: 1.5;
-  width: 320px;
+  width: 330px;
   padding: 20px 40px 0;
 }
 
@@ -60,7 +60,7 @@ img {
   display: block;
 }
 
-p, ul {
+p, ul, div {
   font: inherit;
   text-align: center;
 }
@@ -70,6 +70,10 @@ select {
   margin: 5px auto;
   width: 110px;
   font: inherit;
+}
+
+div {
+  margin-top: 20px;
 }
 
 ul {

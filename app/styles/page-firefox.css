@@ -177,6 +177,16 @@ body.persian-twitter-iraniansans, body.persian-twitter-iraniansans .TwitterCard 
   word-spacing: -1px;
 }
 
+body.persian-twitter-fixed-font-size .TweetTextSize.TweetTextSize--13px,
+body.persian-twitter-fixed-font-size .TweetTextSize.TweetTextSize--16px,
+body.persian-twitter-fixed-font-size .TweetTextSize.TweetTextSize--22px,
+body.persian-twitter-fixed-font-size .TweetTextSize.TweetTextSize--26px,
+body.persian-twitter-fixed-font-size .TweetTextSize .twitter-atreply b,
+body.persian-twitter-fixed-font-size .TweetTextSize .twitter-hashtag b {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
   margin-top: 3px !important;
 }

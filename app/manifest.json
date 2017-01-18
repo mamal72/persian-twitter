@@ -31,7 +31,7 @@
         "styles/page-chrome.css"
       ],
       "run_at": "document_start",
-      "all_frames": false
+      "all_frames": true
     }
   ],
   "page_action": {

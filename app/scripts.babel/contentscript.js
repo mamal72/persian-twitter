@@ -17,10 +17,10 @@ chrome.runtime.onMessage.addListener((request, sender) => {
     const bodyElement = document.querySelector('body');
     const fixedFontSizeStatus = request.changeFont.fixedFontSize;
     const fontName = request.changeFont.font;
-    if (fixedFontSizeStatus && !bodyElement.classList.contains('persian-twitter-fixed-font-size')) {
+    if (fixedFontSizeStatus !== 0 && !bodyElement.classList.contains('persian-twitter-fixed-font-size')) {
       bodyElement.classList.add('persian-twitter-fixed-font-size');
     }
-    if (!fixedFontSizeStatus && bodyElement.classList.contains('persian-twitter-fixed-font-size')) {
+    if (fixedFontSizeStatus === '1' && bodyElement.classList.contains('persian-twitter-fixed-font-size')) {
       bodyElement.classList.remove('persian-twitter-fixed-font-size');
     }
     const newClassName = `persian-twitter-${fontName}`;

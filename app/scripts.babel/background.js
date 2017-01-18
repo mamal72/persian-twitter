@@ -20,10 +20,14 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, currentTab) => {
     if (!tabs.length) {
       return;
     }
+
+    const font = localStorage.getItem('persian-twitter-font') || 'default';
+    const fixedFontSize = parseInt(localStorage.getItem('persian-twitter-fixed-font-size'), 10) || 0
+
     for (const tab of tabs) {
       chrome.tabs.sendMessage(tab.id, {changeFont: {
-        font: localStorage.getItem('persian-twitter-font') || 'default',
-        fixedFontSize: localStorage.getItem('persian-twitter-fixed-font-size') || 0
+        font,
+        fixedFontSize
       }});
     }
   });

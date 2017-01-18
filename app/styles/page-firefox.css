@@ -117,66 +117,86 @@
   src: url('moz-extension://__MSG_@@extension_id__/fonts/IranianSans.woff') format('woff');
 }
 
-body.persian-twitter-vazir {
+body.persian-twitter-vazir, body.persian-twitter-vazir .TwitterCard {
   font-family: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   word-spacing: -1px;
 }
 
-body.persian-twitter-samim {
+body.persian-twitter-samim, body.persian-twitter-samim .TwitterCard {
   font-family: Samim, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-shabnam {
+body.persian-twitter-shabnam, body.persian-twitter-shabnam .TwitterCard {
   font-family: Shabnam, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-sahel {
+body.persian-twitter-sahel, body.persian-twitter-sahel .TwitterCard {
   font-family: Sahel, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-parastoo {
+body.persian-twitter-parastoo, body.persian-twitter-parastoo .TwitterCard {
   font-family: Parastoo, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   word-spacing: -1px;
 }
 
-body.persian-twitter-gandom {
+body.persian-twitter-gandom, body.persian-twitter-gandom .TwitterCard {
   font-family: Gandom, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-tanha {
+body.persian-twitter-tanha, body.persian-twitter-tanha .TwitterCard {
   font-family: Tanha, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   word-spacing: -1px;
 }
 
-body.persian-twitter-behdad {
+body.persian-twitter-behdad, body.persian-twitter-behdad .TwitterCard {
   font-family: Behdad, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-nika {
+body.persian-twitter-nika, body.persian-twitter-nika .TwitterCard {
   font-family: Nika, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-shahab {
+body.persian-twitter-shahab, body.persian-twitter-shahab .TwitterCard {
   font-family: Shahab, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-ganjnameh {
+body.persian-twitter-ganjnameh, body.persian-twitter-ganjnameh .TwitterCard {
   font-family: GanjNameh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-pfont {
+body.persian-twitter-pfont, body.persian-twitter-pfont .TwitterCard {
   font-family: Pfont, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-notonaskh {
+body.persian-twitter-notonaskh, body.persian-twitter-notonaskh .TwitterCard {
   font-family: NotoNaskh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-body.persian-twitter-iraniansans {
+body.persian-twitter-iraniansans, body.persian-twitter-iraniansans .TwitterCard {
   font-family: IranianSans, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   word-spacing: -1px;
 }
 
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
   margin-top: 3px !important;
+}
+
+.ProfileCardStats-statLabel {
+  line-height: 1.4;
+}
+
+.stream-item .content, .permalink-tweet .content {
+  padding: 0 2px;
+}
+
+.ProfileHeaderCard-screenname {
+  width: 100% !important;
+}
+
+.prf-follow-state {
+  width: 130px;
+}
+
+.prf-stats {
+  width: 310px;
 }

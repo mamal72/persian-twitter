@@ -90,7 +90,7 @@
 
 @font-face {
   font-family: Pfont;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont-Regular.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Pfont.woff') format('woff');
   font-weight: normal;
 }
 
@@ -102,13 +102,25 @@
 
 @font-face {
   font-family: NotoNaskh;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Regular.woff') format('woff');
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh.woff') format('woff');
   font-weight: normal;
 }
 
 @font-face {
   font-family: NotoNaskh;
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/NotoNaskh-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DroidNaskh;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/DroidNaskh.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: DroidNaskh;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/DroidNaskh-Bold.woff') format('woff');
   font-weight: bold;
 }
 
@@ -170,6 +182,10 @@ body.persian-twitter-pfont, body.persian-twitter-pfont .TwitterCard {
 
 body.persian-twitter-notonaskh, body.persian-twitter-notonaskh .TwitterCard {
   font-family: NotoNaskh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body.persian-twitter-droidnaskh, body.persian-twitter-droidnaskh .TwitterCard {
+  font-family: DroidNaskh, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 body.persian-twitter-iraniansans, body.persian-twitter-iraniansans .TwitterCard {

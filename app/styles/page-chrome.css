@@ -187,26 +187,67 @@ body.persian-twitter-fixed-font-size .TweetTextSize .twitter-hashtag b {
   font-weight: 400 !important;
 }
 
-blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
-  margin-top: 3px !important;
+body[class*="persian-twitter"] blockquote,
+body[class*="persian-twitter"] dl,
+body[class*="persian-twitter"] dd,
+body[class*="persian-twitter"] h1,
+body[class*="persian-twitter"] h2,
+body[class*="persian-twitter"] h3,
+body[class*="persian-twitter"] h4,
+body[class*="persian-twitter"] h5,
+body[class*="persian-twitter"] h6,
+body[class*="persian-twitter"] figure,
+body[class*="persian-twitter"] p,
+body[class*="persian-twitter"] pre {
+  margin-top: 3px;
 }
 
-.ProfileCardStats-statLabel {
+body[class*="persian-twitter"] .ProfileCardStats-statLabel {
   line-height: 1.4;
 }
 
-.stream-item .content, .permalink-tweet .content {
+body[class*="persian-twitter"] .stream-item .content, .permalink-tweet .content {
   padding: 0 4px;
 }
 
-.ProfileHeaderCard-screenname {
-  width: 100% !important;
+body[class*="persian-twitter"] .ProfileHeaderCard-screenname {
+  width: 100%;
 }
 
-.prf-follow-state {
+body[class*="persian-twitter"] .prf-follow-state {
   width: 130px;
 }
 
-.prf-stats {
+body[class*="persian-twitter"] .prf-stats {
   width: 310px;
+}
+
+body[class*="persian-twitter"] .nav > li > a .text {
+  margin-top: 19px;
+}
+
+body[class*="persian-twitter"] .ProfileTweet-actionCount {
+  vertical-align: middle;
+  height: 0.7em;
+}
+
+body.persian-twitter-vazir .ProfileTweet-actionCount {
+  height: 0.8em;
+}
+
+body.persian-twitter-notonaskh .ProfileTweet-actionCount,
+body.persian-twitter-behdad .ProfileTweet-actionCount,
+body.persian-twitter-nika .ProfileTweet-actionCount,
+body.persian-twitter-shahab .ProfileTweet-actionCount,
+body.persian-twitter-ganjnameh .ProfileTweet-actionCount {
+  height: 0.6em;
+}
+
+body.persian-twitter-pfont .ProfileTweet-actionCount {
+  height: 0.5em;
+}
+
+body[class*="persian-twitter"] .global-dm-nav.new.with-count .dm-new .count-inner,
+body[class*="persian-twitter"] .global-nav .people .count .count-inner {
+  padding: 3px 4px 2px;
 }

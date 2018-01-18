@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -20,7 +20,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://twitter.com/*",
+        "https://*.twitter.com/*",
         "https://tweetdeck.twitter.com/"
       ],
       "js": [

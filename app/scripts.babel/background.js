@@ -10,7 +10,7 @@ const manifestData = chrome.runtime.getManifest();
 const urlPatterns = manifestData.content_scripts[0].matches;
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, currentTab) => {
-  if (currentTab.url && (currentTab.url.startsWith('https://twitter.com') || currentTab.url === 'https://tweetdeck.twitter.com/')) {
+  if (currentTab.url && (currentTab.url.startsWith('https://twitter.com') || currentTab.url === 'https://tweetdeck.twitter.com/') || currentTab.url === 'https://mobile.twitter.com/') {
     chrome.pageAction.show(tabId);    
   }
   if (!changeInfo || changeInfo.status !== 'complete') {

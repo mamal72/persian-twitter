@@ -43,6 +43,7 @@
     "default_popup": "popup.html"
   },
   "web_accessible_resources": [
-    "fonts/*.woff"
+    "fonts/*.woff",
+    "fonts/*.woff2"
   ]
 }

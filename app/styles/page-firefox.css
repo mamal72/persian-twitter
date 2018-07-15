@@ -129,6 +129,17 @@
   src: url('moz-extension://__MSG_@@extension_id__/fonts/IranianSans.woff') format('woff');
 }
 
+@font-face {
+  font-family: Mikhak;
+  src: url('moz-extension://__MSG_@@extension_id__/fonts/Mikhak.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Mikhak;
+  src: url('moz-extension://__MSG_@@extension_id__/fonts/Mikhak-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
 body.persian-twitter-vazir, body.persian-twitter-vazir .TwitterCard {
   font-family: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   word-spacing: -1px;
@@ -190,6 +201,11 @@ body.persian-twitter-droidnaskh, body.persian-twitter-droidnaskh .TwitterCard {
 
 body.persian-twitter-iraniansans, body.persian-twitter-iraniansans .TwitterCard {
   font-family: IranianSans, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  word-spacing: -1px;
+}
+
+body.persian-twitter-mikhak, body.persian-twitter-mikhak .TwitterCard {
+  font-family: Mikahk, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   word-spacing: -1px;
 }
 

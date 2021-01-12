@@ -283,3 +283,7 @@ body[class*="persian-twitter"] .global-dm-nav.new.with-count .dm-new .count-inne
 body[class*="persian-twitter"] .global-nav .people .count .count-inner {
   padding: 3px 4px 2px;
 }
+
+div[lang="fa"] {
+  font-family: inherit !important;
+}
